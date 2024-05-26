@@ -26,9 +26,29 @@ const users = [
         email:"3@gmail.com"
     }
 ]
-console.log(users[1].email);
-console.log(Object.keys(users[1]));
-console.log(Object.values(users[1]));
-console.log(Object.entries(users[1]));
+// console.log(users[1].email);
+// console.log(Object.keys(users[1]));
+// console.log(Object.values(users[1]));
+// console.log(Object.entries(users[1]));
 
-console.log(users[1].hasOwnProperty('id'));
+// console.log(users[1].hasOwnProperty('id'));
+
+
+// De-structure of objects
+const course = {
+    courseName: "js",
+    price : "000",
+    courseInstructor: "Me"
+}
+
+const {courseInstructor : lol} = course
+
+console.log(lol);
+
+// API and JSON
+
+// {
+//     "name": "hitesh",
+//     "courseName": "js",
+//     "price": "000"
+// }
